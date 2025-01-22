@@ -10,7 +10,7 @@ A simple and responsive BMI (Body Mass Index) Calculator web application built u
 1. **User Input**: The user enters their gender, age, height (in feet and inches), and weight (in kilograms) through the form provided.
 2. **BMI Calculation**: The application calculates BMI using the formula:  
    \[
-   BMI = \frac{{\text{{weight}}}}{{(\text{{height}} \times \text{{height}})}}
+   BMI = \frac{{\text{{weight (kg)}}}}{{(\text{{height (m)}})^2}}
    \]
 3. **BMI Category**: Based on the calculated BMI, the app categorizes the result as:
    - **Underweight**: BMI < 18.5
