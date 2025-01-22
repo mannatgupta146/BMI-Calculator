@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    background: linear-gradient(to right, #6dd5fa, #3498db);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Remove scrollbars */
+}
+
+.container {
+    max-width: 360px; /* Slightly smaller container */
+    width: 90%; /* Responsive width */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    overflow: hidden; /* No unnecessary scrolling */
+}
+
+h2 {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+fieldset {
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-size: 14px;
+    text-align: left;
+}
+
+input[type="number"],
+select {
+    width: calc(100% - 20px); /* Consistent width across inputs */
+    padding: 10px;
+    margin: 5px auto 15px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #3498db;
+    box-shadow: 0px 0px 6px rgba(52, 152, 219, 0.6);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Full-width button */
+}
+
+input[type="submit"]:hover {
+    background-color: #217dbb;
+    transform: scale(1.02);
+}
+
+#result {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px dashed #3498db;
+    border-radius: 6px;
+    background-color: #eaf6fb;
+    color: #2c3e50;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 320px; /* Slightly smaller for tablets */
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    fieldset {
+        padding: 8px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input[type="number"],
+    select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    #result {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-height: 85vh; /* Fit within smaller screens */
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input[type="number"],
+    select {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    input[type="submit"] {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    #result {
+        font-size: 12px;
+    }
+}
