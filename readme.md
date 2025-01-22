@@ -2,23 +2,6 @@
 
 A simple and responsive BMI (Body Mass Index) Calculator web application built using HTML, CSS, and JavaScript. It allows users to input their gender, age, height (in feet and inches), and weight (in kg), and calculates their BMI along with the corresponding BMI category (Underweight, Normal Weight, Overweight, or Obese).
 
-## Screenshot
-![BMI Calculator Interface](screenshot.png)  
-*The basic interface of the BMI Calculator*
-
-## How it works
-1. **User Input**: The user enters their gender, age, height (in feet and inches), and weight (in kilograms) through the form provided.
-2. **BMI Calculation**: The application calculates BMI using the formula:  
-   \[
-   BMI = \frac{{\text{{weight (kg)}}}}{{(\text{{height (m)}})^2}}
-   \]
-3. **BMI Category**: Based on the calculated BMI, the app categorizes the result as:
-   - **Underweight**: BMI < 18.5
-   - **Normal Weight**: 18.5 ≤ BMI < 24.9
-   - **Overweight**: 25 ≤ BMI < 29.9
-   - **Obese**: BMI ≥ 30
-4. **Result Display**: The BMI value and corresponding category are displayed on the screen for the user to view.
-
 ## Features
 - **User-friendly Interface**: Simple and intuitive design for ease of use.
 - **Responsive Design**: Fully responsive layout that adapts to different screen sizes (desktop, tablet, and mobile).
@@ -26,6 +9,20 @@ A simple and responsive BMI (Body Mass Index) Calculator web application built u
 - **BMI Categories**: Results classified into Underweight, Normal, Overweight, and Obese.
 - **Mobile-optimized**: Fully optimized for small screen devices, offering an exceptional experience across all devices.
 - **Interactive Animations**: Smooth animations that enhance user interaction.
+
+## Screenshot
+![BMI Calculator Interface](image.png)  
+*The basic interface of the BMI Calculator*
+
+## How it works
+1. **User Input**: The user enters their gender, age, height (in feet and inches), and weight (in kilograms) through the form provided.
+2. **BMI Calculation**: The application calculates the BMI based on the provided data (height in feet and inches and weight in kilograms).
+3. **BMI Category**: Based on the calculated BMI, the app categorizes the result as:
+   - **Underweight**: BMI < 18.5
+   - **Normal Weight**: 18.5 ≤ BMI < 24.9
+   - **Overweight**: 25 ≤ BMI < 29.9
+   - **Obese**: BMI ≥ 30
+4. **Result Display**: The BMI value and corresponding category are displayed on the screen for the user to view.
 
 ## Technologies Used
 - **HTML5**: Used for structuring the web page.
