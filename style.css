@@ -14,7 +14,7 @@ body {
 .container {
     max-width: 360px; /* Slightly smaller container */
     width: 90%; /* Responsive width */
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
@@ -27,29 +27,30 @@ h2 {
     color: #2c3e50;
     text-decoration: underline;
     font-size: 1.4em;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced gap */
 }
 
 form {
-    margin-top: 15px;
+    margin-top: 10px; /* Reduced top margin */
 }
 
 fieldset {
     border: 2px solid #3498db;
     border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 10px; /* Reduced gap */
 }
 
 legend {
     font-weight: bold;
     color: #3498db;
     font-size: 1.1em;
+    margin-bottom: 5px; /* Slight spacing */
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px; /* Reduced spacing between label and input */
     color: #2c3e50;
     font-size: 14px;
     text-align: left;
@@ -58,8 +59,8 @@ label {
 input[type="number"],
 select {
     width: calc(100% - 20px); /* Consistent width across inputs */
-    padding: 10px;
-    margin: 5px auto 15px auto;
+    padding: 8px; /* Slightly reduced padding */
+    margin-bottom: 10px; /* Reduced spacing between inputs */
     border: 1px solid #ccc;
     border-radius: 6px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -78,13 +79,14 @@ input[type="submit"] {
     background-color: #3498db;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 8px; /* Slightly reduced padding */
     cursor: pointer;
     border-radius: 6px;
     font-size: 14px;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     width: 100%; /* Full-width button */
+    margin-top: 10px; /* Slight spacing before button */
 }
 
 input[type="submit"]:hover {
@@ -93,15 +95,15 @@ input[type="submit"]:hover {
 }
 
 #result {
-    margin-top: 15px;
-    padding: 10px;
+    margin-top: 12px; /* Reduced spacing above result */
+    padding: 8px; /* Slightly reduced padding */
     border: 1px dashed #3498db;
     border-radius: 6px;
     background-color: #eaf6fb;
     color: #2c3e50;
     font-size: 14px;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.4; /* Slightly reduced line height */
 }
 
 /* Animations */
@@ -120,7 +122,7 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     .container {
         max-width: 320px; /* Slightly smaller for tablets */
-        padding: 15px;
+        padding: 12px; /* Reduced padding */
     }
 
     h2 {
@@ -128,7 +130,7 @@ input[type="submit"]:hover {
     }
 
     fieldset {
-        padding: 8px;
+        padding: 6px; /* Reduced padding */
     }
 
     label {
@@ -137,12 +139,13 @@ input[type="submit"]:hover {
 
     input[type="number"],
     select {
-        padding: 8px;
+        padding: 7px;
         font-size: 13px;
+        margin-bottom: 8px; /* Reduced gap */
     }
 
     input[type="submit"] {
-        padding: 8px;
+        padding: 7px;
         font-size: 13px;
     }
 
